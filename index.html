@@ -780,8 +780,8 @@
 		function sendEmail() {
 			Email.send({
 				SecureToken: "1871fdda-f63c-4bee-8777-7327b85b97ed",
-				To: 'swissgear31@gmail.com',
-				From: document.getElementById("email").value,
+				To: document.getElementById("email").value,
+				From: 'swissgear31@gmail.com',
 				Subject: document.getElementById("name").value,
 				Body: document.getElementById("message").value
 			}).then(
