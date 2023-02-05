@@ -785,7 +785,10 @@
 				Subject: "INQUIRY-" + document.getElementById("name").value,
 				Body: document.getElementById("message").value + " " + "email: " + document.getElementById("email").value
 			}).then(
-				message => alert(message)
+				message => { 
+					if (message === "OK") alert("Your mail has been sent successfuly! Thank you for reaching us"); 
+					else alert("Error sending email! Please try again later.")
+				}
 			);
 		}
 	</script>
